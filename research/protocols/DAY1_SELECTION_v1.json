@@ -1,0 +1,18 @@
+{
+  "created_utc": "2026-09-14T13:22:33.847289+00:00",
+  "random_seed": 20260914,
+  "algorithm": "Python random.Random(seed).shuffle(list(range(1,55))), first18 source,next12dev,last24confirmation; Day1 smallest ID in source and dev",
+  "role_counts": {
+    "source": 18,
+    "development": 12,
+    "confirmation": 24
+  },
+  "day1_source_subject": 5,
+  "day1_development_subject": 2,
+  "day1_sessions": [
+    1,
+    2
+  ],
+  "history_exposure_status": "pending user response; no confirmation processing authorized",
+  "scores_viewed_before_assignment": false
+}

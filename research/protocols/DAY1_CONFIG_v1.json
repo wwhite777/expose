@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-09-14T13:32:20.157361+00:00",
+  "purpose": "Day1 CPU engineering feasibility only; no scientific effect or selection claim",
+  "selection_file": "research/protocols/DAY1_SELECTION_v1.json",
+  "selection_sha256": "c14420be9cad3ea939f22604c222e511c94abe19f66d3cbaa054a2d70507ba75",
+  "source_subject": 5,
+  "development_subject": 2,
+  "source_session": 1,
+  "history_session": 1,
+  "evaluation_session": 2,
+  "mat_variable": "EEG_MI_train",
+  "excluded_variable": "EEG_MI_test",
+  "preprocessing": {
+    "channels": [
+      "C3",
+      "Cz",
+      "C4",
+      "FC3",
+      "FC4",
+      "CP3",
+      "CPz",
+      "CP4"
+    ],
+    "raw_fs_expected": 1000,
+    "units": "V",
+    "l_freq": 8.0,
+    "h_freq": 30.0,
+    "tmin": 0.5,
+    "tmax": 3.5,
+    "target_fs": 250,
+    "filter_order": 4,
+    "event_index": "MATLAB t-1",
+    "filter_scope": "each isolated four-second trial; no learned statistics",
+    "expected_shape": [
+      100,
+      8,
+      750
+    ]
+  },
+  "model_order": [
+    "csp_lda",
+    "ts_lr"
+  ],
+  "models": {
+    "csp_lda": {
+      "csp_components": 4,
+      "csp_reg": "ledoit_wolf",
+      "csp_cov_est": "concat",
+      "csp_log": true,
+      "csp_norm_trace": false,
+      "lda_solver": "lsqr",
+      "lda_shrinkage": "auto"
+    },
+    "ts_lr": {
+      "covariance": "oas",
+      "tangent_metric": "riemann",
+      "tsupdate": false,
+      "scaler": "StandardScaler fitted only on training",
+      "lr_C": 1.0,
+      "lr_max_iter": 1000,
+      "lr_solver": "lbfgs"
+    }
+  },
+  "history_draw_seed": 20260914,
+  "conditions": [
+    {
+      "name": "source100_n0",
+      "n_per_class": 0,
+      "total_training_trials": 100
+    },
+    {
+      "name": "source100_plus_history60",
+      "n_per_class": 30,
+      "total_training_trials": 160
+    }
+  ],
+  "expected_fits": 4,
+  "draws": 1,
+  "numerical_threads": 1,
+  "memory_limit_gib": 16,
+  "process_cpu_limit_seconds": 3600,
+  "job_wall_limit_seconds": 1800,
+  "training_warning": "100 source trials from one source person; full practical source pool of 1800 trials is not benchmarked",
+  "expected_evaluation_trials": 100,
+  "score_use": "record engineering smoke output only; no model tuning or participant selection from scores",
+  "outcome_access_before_freeze": false
+}

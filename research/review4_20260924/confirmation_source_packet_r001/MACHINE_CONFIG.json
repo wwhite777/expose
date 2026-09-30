@@ -1,0 +1,73 @@
+{
+  "added_n": 60,
+  "adoption_required": true,
+  "draws": 10,
+  "evaluation": {
+    "exact_memberships_deferred": true,
+    "expected_trials": 100,
+    "phase": "offline",
+    "session": 2
+  },
+  "expected_optional_scores": 480,
+  "expected_primary_scores": 960,
+  "history_selection": {
+    "algorithm": "review3 seeded per-class permutation prefix",
+    "exact_memberships_deferred_until_separately_authorized_protected_schema_read": true,
+    "seed": 2026092303,
+    "take_per_class": 30,
+    "tokens": [
+      "history",
+      "openbmi_main",
+      "draw",
+      "protected_id",
+      "label"
+    ]
+  },
+  "optional_conditions": [
+    "base",
+    "pooled"
+  ],
+  "primary_conditions": [
+    "own",
+    "single_0",
+    "single_1",
+    "single_2"
+  ],
+  "protected_access_authorized": false,
+  "protected_participant_ids": [
+    1,
+    4,
+    7,
+    11,
+    13,
+    15,
+    19,
+    22,
+    23,
+    24,
+    27,
+    28,
+    30,
+    34,
+    35,
+    37,
+    40,
+    41,
+    43,
+    44,
+    46,
+    48,
+    49,
+    50
+  ],
+  "schema": "review4-confirmation-source-packet-v1",
+  "setting": "tuned_C_source_frozen",
+  "source_n": 100,
+  "status": "source_packet_only_not_adopted_not_executable",
+  "unimplemented_required_integration": [
+    "authorized protected offline-session preparation with schema validation",
+    "exact protected history/evaluation membership materialization and hash binding",
+    "source-frozen TS-LR fit/score runner using this packet",
+    "outcome suppression until inventory and membership integrity lock"
+  ]
+}

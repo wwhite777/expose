@@ -1,0 +1,254 @@
+{
+  "role_manifest": "research/PARTICIPANT_ROLES_v1.csv",
+  "role_manifest_sha256": "6485e2aedbad765eea3a123934f9b3a51d990bf9462fa01d6f2c8cef2220a2e4",
+  "source_subjects": [
+    5,
+    6,
+    10,
+    12,
+    14,
+    18,
+    20,
+    21,
+    25,
+    26,
+    29,
+    31,
+    32,
+    36,
+    39,
+    42,
+    47,
+    52
+  ],
+  "source_sessions": [
+    1
+  ],
+  "history_session": 1,
+  "evaluation_session": 2,
+  "preprocessing": {
+    "channels": [
+      "C3",
+      "Cz",
+      "C4",
+      "FC3",
+      "FC4",
+      "CP3",
+      "CPz",
+      "CP4"
+    ],
+    "raw_fs_expected": 1000,
+    "units": "V",
+    "l_freq": 8.0,
+    "h_freq": 30.0,
+    "tmin": 0.5,
+    "tmax": 3.5,
+    "target_fs": 250,
+    "filter_order": 4,
+    "event_index": "MATLAB t-1",
+    "filter_scope": "each isolated four-second trial; no learned statistics",
+    "expected_shape": [
+      100,
+      8,
+      750
+    ]
+  },
+  "loader_file": "src/expose/lee.py",
+  "loader_sha256": "2c8895b5e8bc5c7f56d6ca7d2dcbdaf3c03b1f7f6b90e716d7c2085a1dbd4e77",
+  "model_code": "src/expose/baselines.py",
+  "model_code_sha256": "ba4423a7c223a58684ba3f5a6b2272c376a2d01746760486da5ddfb2ff8244ae",
+  "models": {
+    "csp_lda": {
+      "csp_components": 4,
+      "csp_reg": "ledoit_wolf",
+      "csp_cov_est": "concat",
+      "csp_log": true,
+      "csp_norm_trace": false,
+      "lda_solver": "lsqr",
+      "lda_shrinkage": "auto"
+    },
+    "ts_lr": {
+      "covariance": "oas",
+      "tangent_metric": "riemann",
+      "tsupdate": false,
+      "scaler": "StandardScaler fitted only on training",
+      "lr_C": 1.0,
+      "lr_max_iter": 1000,
+      "lr_solver": "lbfgs"
+    }
+  },
+  "probability_schema": {
+    "raw_to_model_label": {
+      "1": 0,
+      "2": 1
+    },
+    "class_names": [
+      "right_hand",
+      "left_hand"
+    ],
+    "columns": {
+      "p_class0_right": 0,
+      "p_class1_left": 1
+    },
+    "tie_rule": "first class on exact probability tie"
+  },
+  "schema_version": 1,
+  "created_utc": "2026-09-16T06:15:37.878987+00:00",
+  "work_block": "Day3-4 bounded development continuation after explicit continue",
+  "scope": "Exploratory successor after exposed Day2; no confirmation or scientific promotion",
+  "development_subjects": [
+    2,
+    3,
+    8,
+    9,
+    16,
+    17,
+    33,
+    38,
+    45,
+    51,
+    53,
+    54
+  ],
+  "prior_exposed_development_subjects": [
+    2,
+    3,
+    8,
+    9,
+    16,
+    17,
+    33,
+    38
+  ],
+  "new_development_subjects": [
+    45,
+    51,
+    53,
+    54
+  ],
+  "model_order": [
+    "csp_lda",
+    "ts_lr",
+    "mdm"
+  ],
+  "history_doses_per_class": [
+    0,
+    5,
+    15,
+    30
+  ],
+  "history_draw_seeds": [
+    20260915,
+    20260916
+  ],
+  "source_draw_seeds": [
+    20260918,
+    20260919
+  ],
+  "draws": 2,
+  "history_rng": "numpy default_rng(SeedSequence([history_draw_seed, subject_id])); class0 permutation then class1; nested prefixes",
+  "fixed_source_slots_per_class": 50,
+  "arms": [
+    "practical",
+    "fixed_total"
+  ],
+  "calibration_prior_grid": [
+    0,
+    5,
+    20,
+    100
+  ],
+  "calibration_tie_order": [
+    100,
+    20,
+    5,
+    0
+  ],
+  "mdm": {
+    "covariance": "oas",
+    "metric": "riemann",
+    "n_jobs": 1
+  },
+  "target_only_model": "ts_lr",
+  "mixed_weights": [
+    0.4,
+    0.2,
+    0.2,
+    0.2
+  ],
+  "scenarios": {
+    "Cold": [
+      0.8,
+      0.1,
+      0.1,
+      0.0
+    ],
+    "Mixed": [
+      0.4,
+      0.2,
+      0.2,
+      0.2
+    ],
+    "Warm": [
+      0.1,
+      0.1,
+      0.2,
+      0.6
+    ]
+  },
+  "expected_preparation_files": 42,
+  "expected_preparation_trials": 4200,
+  "expected_baseline_fits": 519,
+  "expected_calibration_source_fits": 1,
+  "expected_calibration_target_updates": 288,
+  "expected_operations": 808,
+  "expected_prediction_rows": 110400,
+  "selection": {
+    "analysis": "leave-one-development-person-out; average two draws within person before selection and reporting",
+    "baselines": [
+      "a0",
+      "a_uniform",
+      "simple_calibration"
+    ],
+    "additional_policy": "dose-specific classical pipeline chosen on other11 people, no heldout-person labels used for choice",
+    "ties": "BA within1e-12: smaller measured practical-arm mean fit+predict cost per evaluated person, then model_order; calibration ties use declared descending prior order",
+    "pooled_selection": "all12 development values reported only as resubstitution/selection candidate; no confirmation selector frozen"
+  },
+  "bootstrap": {
+    "draws": 10000,
+    "seed": 20260920,
+    "ci_level": 0.95,
+    "scope": "paired person percentile descriptive only; repeated-source, overlapping selector-training sets, prior exploration not covered; no scientific significance inference"
+  },
+  "null_control": {
+    "label_permutations": 1000,
+    "seed": 20260921,
+    "tolerance": 0.015,
+    "scope": "evaluation-label shuffles within subject shared across model/dose/draw; no refitting or reselection; scorer sanity only"
+  },
+  "decision": {
+    "practical_effect": 0.02,
+    "SELECTION_SIGNAL": "LOPO Mixed point gain >=0.02 against all3 original comparators; exploratory clue for protocol review only",
+    "CALIBRATION_ONLY": "selection signal absent; selected calibration n30 gain>=0.02 and that gain minus pooled TS-LR n30 gain>=0.02; useful-history clue, not mechanism identification or selection success",
+    "INCONCLUSIVE": "neither prespecified point signal met; no zero-effect or scientific KILL inference",
+    "ERROR": "required input/output/split/label/probability/fit/control/integrity defect unresolved",
+    "scientific_target": "unchanged all3-comparator>=2pp point gain plus corrected CI conditions on future sealed confirmation",
+    "scientific_gate_passed": false
+  },
+  "resource": {
+    "numerical_threads": 1,
+    "process_memory_gib": 16,
+    "block_cpu_core_hours_cap": 20,
+    "project_plus_environment_storage_gb_cap": 30,
+    "job_wall_seconds_cap": 14400,
+    "grid_wall_seconds": 3600,
+    "grid_cpu_soft_seconds": 3600,
+    "grid_cpu_hard_seconds": 3610,
+    "gpu_hours": 0,
+    "audit_per_phase_usd_cap": 12,
+    "audit_per_phase_wall_seconds": 900,
+    "audit_numeric_cpu_seconds": 120
+  },
+  "exclusions": "No outcome-based exclusions, new seeds, online segment, confirmation data or external cohort",
+  "outcomes_viewed_before_freeze": "Day2 eight-person outcomes exposed; no successor outcomes viewed"
+}

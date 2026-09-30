@@ -1,0 +1,182 @@
+{
+  "contract_id": "BNCI2B_DATA_CONTRACT_v1",
+  "dataset": {
+    "channels": [
+      "C3",
+      "Cz",
+      "C4"
+    ],
+    "code": "BNCI2014-004",
+    "montage": "3ch",
+    "role": "external",
+    "sampling_hz": 250,
+    "sessions": [
+      1,
+      2
+    ],
+    "short_name": "bnci2014b",
+    "subjects": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "durable_arrays": [
+    "cov",
+    "ea_cov",
+    "empirical_cov",
+    "y"
+  ],
+  "index_contract": {
+    "filename": "dataset_index.json",
+    "record_fields": [
+      "subject",
+      "session",
+      "role",
+      "npz_path",
+      "sha256",
+      "trial_ids"
+    ],
+    "records": 18,
+    "role": "external",
+    "sessions_per_subject": [
+      1,
+      2
+    ]
+  },
+  "loader_sha256": "26eef40447b5d2f3c4c4a74c61e8ed1b0de798084e3d5a1b5bfe908a171cf7c9",
+  "preparation_script_sha256": "329676adf39cd86fe5e9c955c6ebc0eb93619b80fdfb03d184c93e427e1a8a49",
+  "preprocessing": {
+    "artifact_policy": "retain_all_and_expose_flags",
+    "bandpass_hz": [
+      8.0,
+      30.0
+    ],
+    "cue_offset_seconds": 3.0,
+    "eeg_channels": [
+      "C3",
+      "Cz",
+      "C4"
+    ],
+    "ea_application": "same_session1_whitener_to_sessions1_and2_before_OAS",
+    "ea_reference": "all_120_session1_epochs_label_free_ddof1_mean",
+    "epoch_interval": "half_open",
+    "epoch_relative_to_cue_seconds": [
+      0.5,
+      3.5
+    ],
+    "filter": "Butterworth_order4_SOS_forward_backward_per_trial",
+    "filter_support_relative_to_cue_seconds": [
+      0.0,
+      4.0
+    ],
+    "samples": 750,
+    "trial_indexing": "MATLAB_one_based_trial_onset"
+  },
+  "resource_bounds": {
+    "classifier_fits": 0,
+    "maximum_durable_output_bytes": 3000000,
+    "hard_source_file_limit_bytes": 1073741824,
+    "maximum_source_file_bytes": 38046816,
+    "network_bytes": 314587756,
+    "numerical_threads": 1,
+    "process_address_space_limit_bytes": 17179869184,
+    "raw_or_epoch_arrays_persisted": false
+  },
+  "selection": {
+    "chronology": "session1_to_session2",
+    "feedback": false,
+    "mat_struct_indices_zero_based": [
+      0,
+      1
+    ],
+    "official_sessions": [
+      "01T",
+      "02T"
+    ],
+    "session1_use": "source_person_or_target_history",
+    "session2_use": "target_evaluation"
+  },
+  "source_evidence": {
+    "mat_layout_basis": "Current MOABB _load_data_004_2014 obtains BxxT.mat and BxxE.mat, _convert_mi iterates each MAT data struct as a session, and the official five-session table assigns 01T/02T/03T to training and 04E/05E to evaluation. The three-struct BxxT count is a source-derived runtime expectation, guarded before processing; no MAT body was opened during prefit preparation.",
+    "moabb": {
+      "base_py_sha256": "920e327b8131bd6f63a6991863b4b69eff67a18075ea13da916aa09712cf5f5d",
+      "bnci_2014_py_sha256": "ec4b3ce868bb839f6cc070de6e4ad1896e2c441dc127d89c4081b187da005d91",
+      "commit": "18e7d4c03aeed0b402404a60ae2639c09d0ffee0",
+      "repository": "https://github.com/NeuroTechX/moabb"
+    },
+    "official_description": {
+      "read_scope": "all six pages; session design, timing figure, file table, event/index and artifact definitions",
+      "sha256": "cf520e61276cb693505b1f0bf4c0bd098ae76c57b8a1d191165599aa932f1af2",
+      "url": "https://www.bbci.de/competition/iv/desc_2b.pdf"
+    },
+    "url_check": {
+      "method": "HTTP HEAD only; no MAT response body",
+      "observed_utc_date": "2026-09-24",
+      "result": "all nine contracted lampx URLs returned HTTP 200 and the bound Content-Length values"
+    }
+  },
+  "source_files": [
+    {
+      "content_length": 34203437,
+      "filename": "B01T.mat",
+      "subject": 1,
+      "url": "https://lampx.tugraz.at/~bci/database/004-2014/B01T.mat"
+    },
+    {
+      "content_length": 33060824,
+      "filename": "B02T.mat",
+      "subject": 2,
+      "url": "https://lampx.tugraz.at/~bci/database/004-2014/B02T.mat"
+    },
+    {
+      "content_length": 35581243,
+      "filename": "B03T.mat",
+      "subject": 3,
+      "url": "https://lampx.tugraz.at/~bci/database/004-2014/B03T.mat"
+    },
+    {
+      "content_length": 35749247,
+      "filename": "B04T.mat",
+      "subject": 4,
+      "url": "https://lampx.tugraz.at/~bci/database/004-2014/B04T.mat"
+    },
+    {
+      "content_length": 35047531,
+      "filename": "B05T.mat",
+      "subject": 5,
+      "url": "https://lampx.tugraz.at/~bci/database/004-2014/B05T.mat"
+    },
+    {
+      "content_length": 36512412,
+      "filename": "B06T.mat",
+      "subject": 6,
+      "url": "https://lampx.tugraz.at/~bci/database/004-2014/B06T.mat"
+    },
+    {
+      "content_length": 33061422,
+      "filename": "B07T.mat",
+      "subject": 7,
+      "url": "https://lampx.tugraz.at/~bci/database/004-2014/B07T.mat"
+    },
+    {
+      "content_length": 38046816,
+      "filename": "B08T.mat",
+      "subject": 8,
+      "url": "https://lampx.tugraz.at/~bci/database/004-2014/B08T.mat"
+    },
+    {
+      "content_length": 33324824,
+      "filename": "B09T.mat",
+      "subject": 9,
+      "url": "https://lampx.tugraz.at/~bci/database/004-2014/B09T.mat"
+    }
+  ],
+  "status": "prefit_pending_root_approval"
+}
