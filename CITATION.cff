@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this code or derived results, cite this repository and the original datasets listed in reproduction/DATA_AND_LICENSES.md."
+type: software
+title: "EXPOSE: personal history versus matched external data in motor-imagery decoding"
+authors:
+  - family-names: Jeong
+    given-names: Woncheol
+    affiliation: Sungkyunkwan University
+    orcid: "https://orcid.org/0000-0001-9484-7808"
+  - family-names: Oh
+    given-names: Hayoung
+    affiliation: Sungkyunkwan University
+    orcid: "https://orcid.org/0000-0002-7362-5138"
+repository-code: "https://github.com/wwhite777/expose"
+date-released: 2026-09-30

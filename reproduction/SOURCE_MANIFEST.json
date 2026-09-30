@@ -1,0 +1,112 @@
+{
+  "schema": "expose-reproduction-addition-v1",
+  "date": "2026-09-30",
+  "scope": "OpenBMI confirmation prediction replay; large-source aggregate results and figure; no raw EEG or BCI trial-level inputs.",
+  "files": [
+    {
+      "path": "scripts/reproduce_revision_v10_large_source.py",
+      "source_sha256": "06126856c0ca535bcd36ec6eb9c64bb74bc168cc3bd7ef4d3d15ca5e2892f7fa",
+      "sha256": "b5c892b9d344e12763e54b624556e94400a65fcc213e78bd9288233c576ba2f2",
+      "bytes": 19015,
+      "transformation": "Output receipt scope wording only; scientific calculations and validation unchanged."
+    },
+    {
+      "path": "scripts/plot_source_context.py",
+      "source_sha256": "56ece0c23fdb2894fbd39155eb220de403ac35c3e19ac82db86197ea813fec87",
+      "sha256": "56ece0c23fdb2894fbd39155eb220de403ac35c3e19ac82db86197ea813fec87",
+      "bytes": 5418,
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "reproduction/results/confirmation/trial_predictions.csv.gz",
+      "source_sha256": "7fab4444b0241b74f2718a886b71b3c35c131a59bdb829c43738ef275abfad3a",
+      "sha256": "7fab4444b0241b74f2718a886b71b3c35c131a59bdb829c43738ef275abfad3a",
+      "bytes": 3407102,
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "reproduction/results/confirmation/scores.csv",
+      "source_sha256": "82c84d9e5efd0787be19bea7a322dcd30f6ceabfa4fcc9ee62164e2b2f488e72",
+      "sha256": "82c84d9e5efd0787be19bea7a322dcd30f6ceabfa4fcc9ee62164e2b2f488e72",
+      "bytes": 141209,
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "reproduction/results/confirmation/person_effects.csv",
+      "source_sha256": "3deed86d0e14aa3bb914bc6a06321afe7810776affb4ae15454fabd355db848d",
+      "sha256": "3deed86d0e14aa3bb914bc6a06321afe7810776affb4ae15454fabd355db848d",
+      "bytes": 1262,
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "reproduction/results/confirmation/summary.json",
+      "source_sha256": "058ed26c27794fbe6face44ef338f7c1c8f97e6b8f9503d398b68fa5ede32f66",
+      "sha256": "058ed26c27794fbe6face44ef338f7c1c8f97e6b8f9503d398b68fa5ede32f66",
+      "bytes": 3271,
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "reproduction/results/large_source/summary.json",
+      "source_sha256": "931e7acaaf0772e0a5d5d00b45c5f998c1a663b38e895aef933a6adbbd023c2c",
+      "sha256": "931e7acaaf0772e0a5d5d00b45c5f998c1a663b38e895aef933a6adbbd023c2c",
+      "bytes": 27035,
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "reproduction/results/large_source/participant_effects.csv",
+      "source_sha256": "df2db1269e5c27d8ed1797f9bf71443e1f5bbfb869433377a0b6689e9ff37712",
+      "sha256": "df2db1269e5c27d8ed1797f9bf71443e1f5bbfb869433377a0b6689e9ff37712",
+      "bytes": 14746,
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "reproduction/results/source_context_values.json",
+      "source_sha256": "4164183e49704b0ed86eb00eb4296e8adcdaa978931bc20c707f534a20c826ac",
+      "sha256": "6ba280b39f96fe9d75655a85d2faa777b00932bee73addb7c26d73b3bb5c02d5",
+      "bytes": 17849,
+      "transformation": "Local input-path metadata removed; all participant values, summaries and caption unchanged."
+    },
+    {
+      "path": "reproduction/requirements.txt",
+      "source_sha256": "a14f2473ce19bd7cc8962cf1813c49679012cdfcb7133e89cbdce152cb54dabe",
+      "sha256": "a14f2473ce19bd7cc8962cf1813c49679012cdfcb7133e89cbdce152cb54dabe",
+      "bytes": 94,
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "figures/figure1_overview.svg",
+      "source_sha256": "0238d21185bf2ca0279ecf09c9e0b5014e9fac9830d28fa323d07f90db9ed120",
+      "sha256": "0238d21185bf2ca0279ecf09c9e0b5014e9fac9830d28fa323d07f90db9ed120",
+      "bytes": 8762,
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "figures/figure1_overview.pdf",
+      "source_sha256": "24727903cbc5e7eddfb13a45a48389227eec85a21d984f9b2286f16332c0aea7",
+      "sha256": "24727903cbc5e7eddfb13a45a48389227eec85a21d984f9b2286f16332c0aea7",
+      "bytes": 13125,
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "figures/figure1_overview_editable.pptx",
+      "source_sha256": "1653b81cab71b6973a55cd8450399a5a49f109c0c0d9768446cfbad4c1371a41",
+      "sha256": "1653b81cab71b6973a55cd8450399a5a49f109c0c0d9768446cfbad4c1371a41",
+      "bytes": 30253,
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "scripts/reproduce_final_confirmation.py",
+      "source_sha256": "a1e7f573f313a49f181c1d4a39813871ed4f504537d6bcffcf3c9c00e9d67c4a",
+      "sha256": "a1e7f573f313a49f181c1d4a39813871ed4f504537d6bcffcf3c9c00e9d67c4a",
+      "bytes": 9890,
+      "transformation": "Existing byte-identical script retained from initial repository commit."
+    },
+    {
+      "path": "research/review4_20260924/confirmation_source_packet_r001/PACKET_RECEIPT.json",
+      "source_sha256": "776b10f44d17164cc472377dd59ee7925140aa0639741a2518d2931f60f8543b",
+      "sha256": "d05ae6661ef5a605c0313c288be7c42c3e6dfb620cb44de836e092148ca9f495",
+      "bytes": 9509,
+      "transformation": "Pre-existing export replaced command[0] absolute interpreter path with <venv>/bin/python; all remaining JSON values equal to original. Original receipt hash retained here, not replaced in original project."
+    }
+  ]
+}

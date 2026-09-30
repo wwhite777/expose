@@ -1,0 +1,585 @@
+{
+  "caption_note": "Large bases: S=1,620 (OpenBMI) and S=972 (BNCI); points are 10-draw participant means with t 95% intervals.\nOpenBMI 24 is a post hoc secondary analysis of the completed cohort, not a new confirmation test.",
+  "cohort_order": [
+    "openbmi_development",
+    "bnci_loso",
+    "openbmi_confirmation"
+  ],
+  "interval": "two-sided participant t 95% interval from completed analysis",
+  "participants": [
+    {
+      "cohort": "bnci_loso",
+      "large_donor": 0.8168981481481481,
+      "large_effect": -0.020370370370370372,
+      "large_own": 0.7965277777777777,
+      "participant_id": 1,
+      "small_donor": 0.7101851851851853,
+      "small_effect": 0.09120370370370365,
+      "small_own": 0.8013888888888889
+    },
+    {
+      "cohort": "bnci_loso",
+      "large_donor": 0.5425925925925925,
+      "large_effect": -0.005092592592592604,
+      "large_own": 0.5375,
+      "participant_id": 2,
+      "small_donor": 0.5219907407407407,
+      "small_effect": 0.008564814814814798,
+      "small_own": 0.5305555555555556
+    },
+    {
+      "cohort": "bnci_loso",
+      "large_donor": 0.7814814814814814,
+      "large_effect": -0.03634259259259259,
+      "large_own": 0.7451388888888888,
+      "participant_id": 3,
+      "small_donor": 0.7662037037037038,
+      "small_effect": 0.12615740740740738,
+      "small_own": 0.892361111111111
+    },
+    {
+      "cohort": "bnci_loso",
+      "large_donor": 0.5328703703703704,
+      "large_effect": 0.04004629629629625,
+      "large_own": 0.5729166666666666,
+      "participant_id": 4,
+      "small_donor": 0.586111111111111,
+      "small_effect": 0.06458333333333335,
+      "small_own": 0.6506944444444445
+    },
+    {
+      "cohort": "bnci_loso",
+      "large_donor": 0.500462962962963,
+      "large_effect": 0.012037037037037023,
+      "large_own": 0.5125,
+      "participant_id": 5,
+      "small_donor": 0.5164351851851852,
+      "small_effect": 0.07037037037037039,
+      "small_own": 0.5868055555555556
+    },
+    {
+      "cohort": "bnci_loso",
+      "large_donor": 0.6407407407407407,
+      "large_effect": -0.008796296296296312,
+      "large_own": 0.6319444444444444,
+      "participant_id": 6,
+      "small_donor": 0.5840277777777778,
+      "small_effect": 0.04583333333333334,
+      "small_own": 0.6298611111111111
+    },
+    {
+      "cohort": "bnci_loso",
+      "large_donor": 0.6011574074074073,
+      "large_effect": 0.030787037037037012,
+      "large_own": 0.6319444444444444,
+      "participant_id": 7,
+      "small_donor": 0.5747685185185185,
+      "small_effect": 0.04953703703703703,
+      "small_own": 0.6243055555555556
+    },
+    {
+      "cohort": "bnci_loso",
+      "large_donor": 0.8599537037037036,
+      "large_effect": 0.03518518518518515,
+      "large_own": 0.8951388888888889,
+      "participant_id": 8,
+      "small_donor": 0.7293981481481482,
+      "small_effect": 0.14074074074074078,
+      "small_own": 0.8701388888888889
+    },
+    {
+      "cohort": "bnci_loso",
+      "large_donor": 0.6548611111111111,
+      "large_effect": 0.07569444444444444,
+      "large_own": 0.7305555555555555,
+      "participant_id": 9,
+      "small_donor": 0.5719907407407407,
+      "small_effect": 0.17106481481481478,
+      "small_own": 0.7430555555555556
+    },
+    {
+      "cohort": "openbmi_confirmation",
+      "large_donor": 0.703,
+      "large_effect": 0.026000000000000023,
+      "large_own": 0.729,
+      "participant_id": 1,
+      "small_donor": 0.6093333333333333,
+      "small_effect": 0.08466666666666663,
+      "small_own": 0.694
+    },
+    {
+      "cohort": "openbmi_confirmation",
+      "large_donor": 0.6033333333333334,
+      "large_effect": 0.014666666666666672,
+      "large_own": 0.6180000000000001,
+      "participant_id": 4,
+      "small_donor": 0.5283333333333334,
+      "small_effect": 0.016666666666666673,
+      "small_own": 0.5449999999999999
+    },
+    {
+      "cohort": "openbmi_confirmation",
+      "large_donor": 0.5630000000000001,
+      "large_effect": 0.040000000000000015,
+      "large_own": 0.6030000000000001,
+      "participant_id": 7,
+      "small_donor": 0.5666666666666667,
+      "small_effect": 0.044333333333333357,
+      "small_own": 0.611
+    },
+    {
+      "cohort": "openbmi_confirmation",
+      "large_donor": 0.5166666666666667,
+      "large_effect": -0.0016666666666666774,
+      "large_own": 0.515,
+      "participant_id": 11,
+      "small_donor": 0.5040000000000001,
+      "small_effect": 0.010000000000000009,
+      "small_own": 0.514
+    },
+    {
+      "cohort": "openbmi_confirmation",
+      "large_donor": 0.5053333333333334,
+      "large_effect": 0.008666666666666666,
+      "large_own": 0.514,
+      "participant_id": 13,
+      "small_donor": 0.49366666666666664,
+      "small_effect": 0.023333333333333345,
+      "small_own": 0.5170000000000001
+    },
+    {
+      "cohort": "openbmi_confirmation",
+      "large_donor": 0.6336666666666667,
+      "large_effect": -0.07866666666666668,
+      "large_own": 0.5549999999999999,
+      "participant_id": 15,
+      "small_donor": 0.5833333333333333,
+      "small_effect": -0.03933333333333331,
+      "small_own": 0.544
+    },
+    {
+      "cohort": "openbmi_confirmation",
+      "large_donor": 0.7736666666666668,
+      "large_effect": 0.037333333333333316,
+      "large_own": 0.8110000000000002,
+      "participant_id": 19,
+      "small_donor": 0.6713333333333332,
+      "small_effect": 0.04366666666666669,
+      "small_own": 0.715
+    },
+    {
+      "cohort": "openbmi_confirmation",
+      "large_donor": 0.7446666666666666,
+      "large_effect": 0.01233333333333334,
+      "large_own": 0.757,
+      "participant_id": 22,
+      "small_donor": 0.642,
+      "small_effect": 0.00800000000000003,
+      "small_own": 0.65
+    },
+    {
+      "cohort": "openbmi_confirmation",
+      "large_donor": 0.8333333333333334,
+      "large_effect": 0.010666666666666668,
+      "large_own": 0.8440000000000001,
+      "participant_id": 23,
+      "small_donor": 0.6953333333333334,
+      "small_effect": 0.09166666666666673,
+      "small_own": 0.7870000000000001
+    },
+    {
+      "cohort": "openbmi_confirmation",
+      "large_donor": 0.5123333333333333,
+      "large_effect": -0.0003333333333333299,
+      "large_own": 0.5119999999999999,
+      "participant_id": 24,
+      "small_donor": 0.5266666666666667,
+      "small_effect": 0.00933333333333336,
+      "small_own": 0.5360000000000001
+    },
+    {
+      "cohort": "openbmi_confirmation",
+      "large_donor": 0.532,
+      "large_effect": 0.0070000000000000175,
+      "large_own": 0.539,
+      "participant_id": 27,
+      "small_donor": 0.522,
+      "small_effect": 0.023000000000000027,
+      "small_own": 0.545
+    },
+    {
+      "cohort": "openbmi_confirmation",
+      "large_donor": 0.826,
+      "large_effect": 0.009999999999999998,
+      "large_own": 0.8360000000000001,
+      "participant_id": 28,
+      "small_donor": 0.7503333333333333,
+      "small_effect": 0.05166666666666667,
+      "small_own": 0.8020000000000002
+    },
+    {
+      "cohort": "openbmi_confirmation",
+      "large_donor": 0.6116666666666666,
+      "large_effect": -0.01866666666666663,
+      "large_own": 0.593,
+      "participant_id": 30,
+      "small_donor": 0.5773333333333334,
+      "small_effect": -0.01433333333333332,
+      "small_own": 0.5630000000000001
+    },
+    {
+      "cohort": "openbmi_confirmation",
+      "large_donor": 0.42266666666666663,
+      "large_effect": -0.0016666666666666607,
+      "large_own": 0.421,
+      "participant_id": 34,
+      "small_donor": 0.45533333333333326,
+      "small_effect": -0.004333333333333328,
+      "small_own": 0.45099999999999996
+    },
+    {
+      "cohort": "openbmi_confirmation",
+      "large_donor": 0.4883333333333334,
+      "large_effect": -0.003333333333333327,
+      "large_own": 0.485,
+      "participant_id": 35,
+      "small_donor": 0.5093333333333334,
+      "small_effect": -0.024333333333333325,
+      "small_own": 0.485
+    },
+    {
+      "cohort": "openbmi_confirmation",
+      "large_donor": 0.8293333333333335,
+      "large_effect": 0.05766666666666662,
+      "large_own": 0.8869999999999999,
+      "participant_id": 37,
+      "small_donor": 0.7383333333333333,
+      "small_effect": 0.13666666666666663,
+      "small_own": 0.875
+    },
+    {
+      "cohort": "openbmi_confirmation",
+      "large_donor": 0.558,
+      "large_effect": 0.0030000000000000027,
+      "large_own": 0.5610000000000002,
+      "participant_id": 40,
+      "small_donor": 0.5469999999999999,
+      "small_effect": 0.019000000000000006,
+      "small_own": 0.5660000000000001
+    },
+    {
+      "cohort": "openbmi_confirmation",
+      "large_donor": 0.5476666666666667,
+      "large_effect": 0.019333333333333324,
+      "large_own": 0.5670000000000001,
+      "participant_id": 41,
+      "small_donor": 0.5386666666666667,
+      "small_effect": 0.033333333333333326,
+      "small_own": 0.572
+    },
+    {
+      "cohort": "openbmi_confirmation",
+      "large_donor": 0.6213333333333334,
+      "large_effect": 0.0076666666666666775,
+      "large_own": 0.629,
+      "participant_id": 43,
+      "small_donor": 0.6053333333333334,
+      "small_effect": 0.07566666666666667,
+      "small_own": 0.6809999999999999
+    },
+    {
+      "cohort": "openbmi_confirmation",
+      "large_donor": 0.7856666666666667,
+      "large_effect": 0.04133333333333337,
+      "large_own": 0.8270000000000002,
+      "participant_id": 44,
+      "small_donor": 0.7396666666666667,
+      "small_effect": 0.12233333333333334,
+      "small_own": 0.8619999999999999
+    },
+    {
+      "cohort": "openbmi_confirmation",
+      "large_donor": 0.686,
+      "large_effect": -0.006000000000000005,
+      "large_own": 0.6799999999999999,
+      "participant_id": 46,
+      "small_donor": 0.5943333333333334,
+      "small_effect": -0.0033333333333333106,
+      "small_own": 0.591
+    },
+    {
+      "cohort": "openbmi_confirmation",
+      "large_donor": 0.5176666666666667,
+      "large_effect": 0.009333333333333327,
+      "large_own": 0.5269999999999999,
+      "participant_id": 48,
+      "small_donor": 0.5256666666666666,
+      "small_effect": 0.023333333333333352,
+      "small_own": 0.549
+    },
+    {
+      "cohort": "openbmi_confirmation",
+      "large_donor": 0.6910000000000001,
+      "large_effect": 0.041000000000000036,
+      "large_own": 0.732,
+      "participant_id": 49,
+      "small_donor": 0.6813333333333331,
+      "small_effect": 0.0026666666666666726,
+      "small_own": 0.6839999999999999
+    },
+    {
+      "cohort": "openbmi_confirmation",
+      "large_donor": 0.5403333333333333,
+      "large_effect": -0.02433333333333333,
+      "large_own": 0.516,
+      "participant_id": 50,
+      "small_donor": 0.512,
+      "small_effect": -0.007000000000000006,
+      "small_own": 0.5050000000000001
+    },
+    {
+      "cohort": "openbmi_development",
+      "large_donor": 0.765,
+      "large_effect": 0.0010000000000000009,
+      "large_own": 0.766,
+      "participant_id": 2,
+      "small_donor": 0.669,
+      "small_effect": -0.040999999999999995,
+      "small_own": 0.6279999999999999
+    },
+    {
+      "cohort": "openbmi_development",
+      "large_donor": 0.8206666666666667,
+      "large_effect": 0.023333333333333296,
+      "large_own": 0.8440000000000001,
+      "participant_id": 3,
+      "small_donor": 0.8006666666666666,
+      "small_effect": 0.09933333333333332,
+      "small_own": 0.9
+    },
+    {
+      "cohort": "openbmi_development",
+      "large_donor": 0.6429999999999999,
+      "large_effect": 0.07999999999999999,
+      "large_own": 0.723,
+      "participant_id": 8,
+      "small_donor": 0.5846666666666667,
+      "small_effect": 0.049333333333333305,
+      "small_own": 0.6339999999999999
+    },
+    {
+      "cohort": "openbmi_development",
+      "large_donor": 0.777,
+      "large_effect": 0.02400000000000003,
+      "large_own": 0.8009999999999999,
+      "participant_id": 9,
+      "small_donor": 0.658,
+      "small_effect": 0.046000000000000006,
+      "small_own": 0.704
+    },
+    {
+      "cohort": "openbmi_development",
+      "large_donor": 0.6796666666666666,
+      "large_effect": 0.006333333333333335,
+      "large_own": 0.6859999999999999,
+      "participant_id": 16,
+      "small_donor": 0.6033333333333335,
+      "small_effect": -0.012333333333333363,
+      "small_own": 0.591
+    },
+    {
+      "cohort": "openbmi_development",
+      "large_donor": 0.6746666666666667,
+      "large_effect": 0.014333333333333299,
+      "large_own": 0.689,
+      "participant_id": 17,
+      "small_donor": 0.5753333333333333,
+      "small_effect": 0.08466666666666664,
+      "small_own": 0.6599999999999999
+    },
+    {
+      "cohort": "openbmi_development",
+      "large_donor": 0.8603333333333334,
+      "large_effect": 0.009666666666666657,
+      "large_own": 0.8700000000000001,
+      "participant_id": 33,
+      "small_donor": 0.8126666666666666,
+      "small_effect": 0.06433333333333333,
+      "small_own": 0.877
+    },
+    {
+      "cohort": "openbmi_development",
+      "large_donor": 0.5686666666666667,
+      "large_effect": 0.03233333333333328,
+      "large_own": 0.6010000000000001,
+      "participant_id": 38,
+      "small_donor": 0.548,
+      "small_effect": 0.00800000000000004,
+      "small_own": 0.556
+    },
+    {
+      "cohort": "openbmi_development",
+      "large_donor": 0.8983333333333334,
+      "large_effect": 0.0016666666666666386,
+      "large_own": 0.9,
+      "participant_id": 45,
+      "small_donor": 0.7133333333333334,
+      "small_effect": 0.10266666666666668,
+      "small_own": 0.8160000000000001
+    },
+    {
+      "cohort": "openbmi_development",
+      "large_donor": 0.5143333333333333,
+      "large_effect": 0.02466666666666668,
+      "large_own": 0.539,
+      "participant_id": 51,
+      "small_donor": 0.508,
+      "small_effect": 0.01900000000000001,
+      "small_own": 0.5269999999999999
+    },
+    {
+      "cohort": "openbmi_development",
+      "large_donor": 0.6133333333333335,
+      "large_effect": 0.021666666666666647,
+      "large_own": 0.635,
+      "participant_id": 53,
+      "small_donor": 0.5820000000000001,
+      "small_effect": 0.004999999999999982,
+      "small_own": 0.587
+    },
+    {
+      "cohort": "openbmi_development",
+      "large_donor": 0.5643333333333334,
+      "large_effect": 0.002666666666666662,
+      "large_own": 0.5670000000000002,
+      "participant_id": 54,
+      "small_donor": 0.537,
+      "small_effect": 0.026000000000000006,
+      "small_own": 0.5630000000000001
+    }
+  ],
+  "schema": "revision-v10-large-source-figure-v1",
+  "scope": "post hoc large-source context comparison; OpenBMI-24 is secondary reuse, not a new confirmation test",
+  "source_contexts": {
+    "bnci_loso": {
+      "large_final": 1032,
+      "large_source": 972,
+      "small_final": 160,
+      "small_source": 100
+    },
+    "openbmi_confirmation": {
+      "large_final": 1680,
+      "large_source": 1620,
+      "small_final": 160,
+      "small_source": 100
+    },
+    "openbmi_development": {
+      "large_final": 1680,
+      "large_source": 1620,
+      "small_final": 160,
+      "small_source": 100
+    }
+  },
+  "summary_statistics": {
+    "bnci_loso": {
+      "large_donor": {
+        "mean": 0.6590020576131687,
+        "t95_high": 0.7601796172647743,
+        "t95_low": 0.557824497961563
+      },
+      "large_effect": {
+        "mean": 0.013683127572016444,
+        "t95_high": 0.04061131123467747,
+        "t95_low": -0.013245056090644584
+      },
+      "large_own": {
+        "mean": 0.6726851851851852,
+        "t95_high": 0.7709082313444197,
+        "t95_low": 0.5744621390259507
+      },
+      "small_donor": {
+        "mean": 0.6179012345679014,
+        "t95_high": 0.6890611335921754,
+        "t95_low": 0.5467413355436274
+      },
+      "small_effect": {
+        "mean": 0.0853395061728395,
+        "t95_high": 0.12519775784173473,
+        "t95_low": 0.04548125450394427
+      },
+      "small_own": {
+        "mean": 0.7032407407407407,
+        "t95_high": 0.8021996829399141,
+        "t95_low": 0.6042817985415674
+      }
+    },
+    "openbmi_confirmation": {
+      "large_donor": {
+        "mean": 0.6269444444444444,
+        "t95_high": 0.6784818519032719,
+        "t95_low": 0.5754070369856169
+      },
+      "large_effect": {
+        "mean": 0.00880555555555556,
+        "t95_high": 0.020265090574512517,
+        "t95_low": -0.002653979463401398
+      },
+      "large_own": {
+        "mean": 0.63575,
+        "t95_high": 0.6926541965477868,
+        "t95_low": 0.5788458034522133
+      },
+      "small_donor": {
+        "mean": 0.5882222222222222,
+        "t95_high": 0.6243787236787673,
+        "t95_low": 0.5520657207656771
+      },
+      "small_effect": {
+        "mean": 0.03027777777777779,
+        "t95_high": 0.049065077706354696,
+        "t95_low": 0.011490477849200882
+      },
+      "small_own": {
+        "mean": 0.6185,
+        "t95_high": 0.6689366248236029,
+        "t95_low": 0.5680633751763972
+      }
+    },
+    "openbmi_development": {
+      "large_donor": {
+        "mean": 0.6982777777777778,
+        "t95_high": 0.7776500094785356,
+        "t95_low": 0.61890554607702
+      },
+      "large_effect": {
+        "mean": 0.020138888888888876,
+        "t95_high": 0.0338556635206046,
+        "t95_low": 0.00642211425717315
+      },
+      "large_own": {
+        "mean": 0.7184166666666667,
+        "t95_high": 0.7947103305693454,
+        "t95_low": 0.642123002763988
+      },
+      "small_donor": {
+        "mean": 0.6326666666666666,
+        "t95_high": 0.696196126041232,
+        "t95_low": 0.5691372072921012
+      },
+      "small_effect": {
+        "mean": 0.03758333333333333,
+        "t95_high": 0.06617406004959522,
+        "t95_low": 0.00899260661707144
+      },
+      "small_own": {
+        "mean": 0.6702499999999999,
+        "t95_high": 0.7513921502628416,
+        "t95_low": 0.5891078497371582
+      }
+    }
+  },
+  "units": {
+    "figure": "percent and percentage points",
+    "stored": "balanced accuracy and BA difference"
+  }
+}

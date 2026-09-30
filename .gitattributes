@@ -1,0 +1,7 @@
+*.csv -text
+*.json -text
+*.svg -text
+*.gz binary
+*.pdf binary
+*.png binary
+*.pptx binary
